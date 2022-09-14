@@ -27,6 +27,9 @@ This app predicts the *Mall Customer* type!
 """
 )
 
+features = ['Annual_Income_(k$)', 'Spending_Score']
+X = df[features]
+
 from sklearn.cluster import KMeans
 kmeans = KMeans(n_clusters=5)
 kmeans.fit(X)
