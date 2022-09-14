@@ -14,8 +14,10 @@ df = pd.read_csv(file)
 
 import matplotlib.pyplot as plt #drawing plotting data, powerful tool
 import numpy as np
-
 import streamlit as st
+
+from sklearn import datasets
+from sklearn.cluster import KMeans
 
 st.write("""
 
